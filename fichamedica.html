@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+    <h1> Ficha Médica </h1>
+</header>
+
+<body>
+    <main>
+        <form action="/processar" method="post" >
+
+            <p>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome aqui!" required>
+            </p>
+
+            <p>
+                <label for="data de nascimento">Data de nascimento:</label><br>
+                <input type="date" id="data de nascimento" name="data de nascimento" required>
+            </p>
+
+            <p>
+                <label for="convenio">Possui convênio?</label><br>
+
+                <input type="radio" id="select" name="opcao" value="sim">
+                <label for="sim">Sim</label><br>
+
+                <input type="radio" id="select" name="opcao" value="nao">
+                <label for="nao">Não</label>
+
+                <label for="se_sim"></label><br>
+                <input type="text" id="se_sim" name="se_sim" placeholder="Se sim, qual?"><br>
+
+            <p>
+                
+                <label for="sangue">Tipo sanguíneo:</label><br>
+
+                <input type="radio" id="select" name="sangue" value="sangue">
+                <label for="tipo_sanguineo">A+</label> 
+
+                <input type="radio" id="select" name="sangue" value="sangue">
+                <label for="tipo_sanguineo">A-</label> 
+
+                <br>
+
+                <input type="radio" id="select" name="sangue" value="sangue">
+                <label for="tipo_sanguineo">B+</label> 
+
+                <input type="radio" id="select" name="sangue" value="sangue">
+                <label for="tipo_sanguineo">B-</label> 
+
+                <br>
+
+                <input type="radio" id="select" name="sangue" value="sangue">
+                <label for="tipo_sanguineo">O+</label> 
+
+                <input type="radio" id="select" name="sangue" value="sangue">
+                <label for="tipo_sanguineo">O-</label> 
+
+                <br>
+
+                <input type="radio" id="select" name="sangue" value="sangue">
+                <label for="tipo_sanguineo">AB+</label> 
+
+                <input type="radio" id="select" name="sangue" value="sangue">
+                <label for="tipo_sanguineo">AB-</label> 
+
+            </p>
+
+            <p>
+                <label for="fuma">Fumante?</label><br>
+
+                <input type="radio" id="select" name="fuma" value="sim">
+                <label for="sim">Sim</label><br>
+
+                <input type="radio" id="select" name="fuma" value="nao">
+                <label for="nao">Não</label>
+
+            </p>
+
+            <p>
+                <label for="alergia">Possui alergia?</label><br>
+
+                <input type="radio" id="select" name="alergia" value="sim">
+                <label for="sim">Sim</label><br>
+
+                <input type="radio" id="select" name="alergia" value="nao">
+                <label for="nao">Não</label>
+
+                <label for="se_sim"></label><br>
+                <input type="text" id="se_sim" name="se_sim" placeholder="Se sim, qual?"><br>
+
+            </p>
+
+            <p>
+                <label for="medicamento">Toma algum medicamento?</label><br>
+
+                <input type="radio" id="select" name="medico" value="sim">
+                <label for="sim">Sim</label><br>
+
+                <input type="radio" id="select" name="medico" value="nao">
+                <label for="nao">Não</label>
+
+                <label for="se_sim"></label><br>
+                <input type="text" id="se_sim" name="se_sim" placeholder="Se sim, qual?"><br>
+
+            </p>
+
+            <p>
+                <label for="bebida">Consome bebida alcóolica?</label><br>
+
+                <input type="radio" id="select" name="bebida" value="sim">
+                <label for="sim">Sim</label><br>
+
+                <input type="radio" id="select" name="bebida" value="nao">
+                <label for="nao">Não</label>
+
+            </p>
+
+             <p>
+                <label for="telefone">Contato</label><br>
+                <input type="tel" name="telefone" pattern="\(\d{2}\)[\s]9\d{4}-\d{4}" placeholder="(xx)xxxxx-xxxx" required>
+                
+            </p>
+
+            <p>
+            <button type="submit">Enviar</button>
+            
+             <div class="captcha-visual">
+                    <div class="noise"></div>
+                    <span class="captcha-code">C 4 L 8 J</span>
+                    <div class="line"></div>
+                </div>
+
+                <input type="text" placeholder="Introduza o código" required>
+            </div>
+
+            <p>
+                <button type="submit">Enviar</button>
+            </p>
+
+        </form>
+    </main>
+    
+</body>
+
+<footer>
+    <p>© 2026 - Hospital Particular Santo Abraão</p>
+</footer>
+
+</html>
